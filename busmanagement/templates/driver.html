@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+  <div> 
+   <form method="post">
+        {% csrf_token %}
+        <h1>Add driver</h1>
+        {{form.as_p}}
+        <button type="submit">submit</button>
+    </form>
+    </div>
+    
+    
+
+{% endblock %}
